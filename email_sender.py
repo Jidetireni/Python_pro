@@ -6,10 +6,10 @@ import ssl
 import smtplib  
 import os
 
-# defining the function with nessecary arguments for the mail 
+# defining the function with nessecary parameters for the mail 
 def create_mail(sender, password, receiver, subject, body ):
 
-    # Creating an instance for the arguments passed  
+    # Creating an instance for the parameters passed  
     mess= EmailMessage()
     mess['From']= sender
     mess['To']= receiver
@@ -27,11 +27,11 @@ def create_mail(sender, password, receiver, subject, body ):
 # For security create an Environment Variable and store your passwords 
 value = os.environ.get('PASSWORD')
 
-# Assigning variables for the passed arguments and declaring the function
+# Assigning variables for the passed parameters and declaring the function
 if __name__  == "__main__":
     email_sender= ""
     email_receiver= ""
-    email_password= value
+    email_password= value 
     email_subject= ""
     email_body= ""
     create_mail(email_sender, email_password, email_receiver, email_subject, email_body)
