@@ -19,7 +19,7 @@ def search(listed, target):
             end= middle - 1
         else:
             start= middle + 1
-            
+    return -1 
 # Assigning variables for the passed parameters and declaring the function
 if __name__ == "__main__":
     mylist= [2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40]
